@@ -1,5 +1,5 @@
 [package]
-name = "tree-sitter-cpp"
+name = "kkkqkx-tree-sitter-cpp"
 description = "C++ grammar for tree-sitter"
 version = "0.23.4"
 authors = [
@@ -25,6 +25,9 @@ include = [
 ]
 
 [lib]
+# Keep the library name so dependents' `tree_sitter_cpp::` imports are
+# unaffected by the package rename.
+name = "tree_sitter_cpp"
 path = "bindings/rust/lib.rs"
 
 [dependencies]
